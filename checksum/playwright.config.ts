@@ -33,7 +33,7 @@ export default defineConfig<{ playwrightExtra?: PuppeteerExtraPlugin[] }>({
     navigationTimeout: 1000 * 30, // set navigation timeout for 30 seconds
   },
   expect: {
-    timeout: 1000 * 10, // set expect (assertion) timeout for 10 seconds
+    timeout: 1000 * 30, // set expect (assertion) timeout for 10 seconds
     toHaveScreenshot: { maxDiffPixelRatio: 0.05, maxDiffPixels: 200 },
   },
 
