@@ -25,14 +25,20 @@ test.describe("Empty state when no products exist", () => {
       });
 
       // Step 3: Verify the empty state message 'No products found' is displayed
-      const emptyStateHeading = page.getByRole("heading", { name: "No products found" });
-      await expect(
-        emptyStateHeading,
-        "Empty state heading 'No products found' should be visible"
-      ).toBeVisible();
+      const emptyStateHeading = page.getByRole("heading", {
+        name: "sfsfsfsdfsfsdf",
+      });
+      await expect
+        .skipAutoRecovery(
+          emptyStateHeading,
+          "Empty state heading 'No products found' should be visible"
+        )
+        .toBeVisible({ timeout: 5_000 });
 
       // Step 4: Verify the message 'Create your first product to get started' is displayed
-      const emptyStateMessage = page.getByText("Create your first product to get started");
+      const emptyStateMessage = page.getByText(
+        "Create your first product to get started"
+      );
       await expect(
         emptyStateMessage,
         "Empty state message should be visible"
