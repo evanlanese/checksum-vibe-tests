@@ -1,0 +1,22 @@
+{
+  "name": "checksum-vibe-tests",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/evanlanese/checksum-vibe-tests#readme",
+  "bugs": {
+    "url": "https://github.com/evanlanese/checksum-vibe-tests/issues"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "checksumai": "^2.0.17"
+  }
+}
