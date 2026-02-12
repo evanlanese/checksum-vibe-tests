@@ -141,7 +141,7 @@ test.describe("Create, edit and delete a new product", () => {
       await checksumAI(
         "Click Delete button in the modal to confirm deletion",
         async () => {
-          await page.locator("#confirmDeleteBtn").click();
+          await page.locator("#delete").click();
         }
       );
 
