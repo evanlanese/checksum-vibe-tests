@@ -12,7 +12,8 @@ test.describe("Empty state when no products exist", () => {
   });
 
   test(
-    defineChecksumTest("Empty state when no products exist", "cD1eF"),
+    defineChecksumTest(`Empty state when no products exist @bug`, "cD1eF"),
+    { annotation: [{ type: "bug", description: `Detailed bug description` }] },
     async ({ page }) => {
       // Step 1: Set localStorage 'products' to an empty array
       await page.evaluate(() => {
